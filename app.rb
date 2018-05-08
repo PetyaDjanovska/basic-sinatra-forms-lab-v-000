@@ -16,13 +16,13 @@ class App < Sinatra::Base
     # <p>Small Forward: <input type="text" name="sf"></p>
     # <p>Power Forward: <input type="text" name="pf"></p>
     # <p>Centre: <input type="text" name="c"></p>
-    @params = params
+    @name = params["name"]
 
     erb :team
   end
 
   get '/team' do
-    @name = params["name"]
+    
     erb :team
   end
 
