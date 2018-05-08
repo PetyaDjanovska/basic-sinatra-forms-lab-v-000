@@ -9,7 +9,7 @@ class App < Sinatra::Base
     @name = params["name"]
     @coach = params["coach"]
     @guard = params["pg"]
-    <p>Shooting Guard: <input type="text" name="sg"></p>
+    @sg = params["sg"]
     <p>Small Forward: <input type="text" name="sf"></p>
     <p>Power Forward: <input type="text" name="pf"></p>
     <p>Centre: <input type="text" name="c"></p>
