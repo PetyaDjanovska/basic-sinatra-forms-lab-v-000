@@ -6,7 +6,9 @@
  </head>
  <body>
    <form method="GET" action="/team">
-     <p>#{params[:name]}<p>
+     <% @params.each do |p| %>
+     <h2><%= friend %></h2>
+     <% end %>
    </form>
  </body>
 </html>
