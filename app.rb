@@ -17,7 +17,8 @@ class App < Sinatra::Base
     # <p>Power Forward: <input type="text" name="pf"></p>
     # <p>Centre: <input type="text" name="c"></p>
     @params = params
-    binding.pry
+
+    erb :team
   end
 
   get '/team' do
