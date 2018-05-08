@@ -6,11 +6,8 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    @name = params["name"]
+    params.to_s
   end
 
-  get '/team' do
-    erb :team
-  end
 
 end
