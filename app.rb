@@ -7,7 +7,8 @@ class App < Sinatra::Base
 
   post '/team' do
     @name = params["name"]
-    @coach = params ["coach"]    <p>Point Guard: <input type="text" name="pg"></p>
+    @coach = params["coach"]
+    @guard = params["pg"]
     <p>Shooting Guard: <input type="text" name="sg"></p>
     <p>Small Forward: <input type="text" name="sf"></p>
     <p>Power Forward: <input type="text" name="pf"></p>
