@@ -6,8 +6,6 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    # params.each do {|k,v| @k = v}
-    @params = params
     # @name = params["name"]
     # @coach = params["coach"]
     # @guard = params["pg"]
